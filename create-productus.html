@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- NAVIGATION SECTION -->
+    <div class="nav">
+    <div class="nav-logo">
+        <p>ADMIN PANEL</p>
+    </div>
+        <div class="account">
+            <img src="img/icon-myaccount 2.svg" alt="">
+            <p>My Account</p>
+        </div>    
+</div>
+    <!-- END OF NAVIGATION BAR -->
+
+    <!-- BODY SECTION STARTS -->
+<div class="body">
+    <div class="body-left">
+        <div class="admin-name">
+                <img src="img/IMG_20210503_091337_168.jpg" alt="">
+            <div class="admin-text">
+                <h4>Yakubu Joseph E.</h4>
+                <p>Full Stack Developer</p>
+            </div>
+        </div>
+
+        <div class="logFlex">
+            <div class="dropdown-menu">
+            <ul class="dropList">
+
+            <li class="dm"><a href="index.html">DASHBORD</a></li>
+            <li class="dm"><a href="createUser.html">CREATE USER </a></li>
+            <li class="dm"><a href="all-users.html">ALL USERS </a></li>
+            <li class="dm"><a href="create-productus.html">CREATE PRODUCT </a></li>
+            <li class="dm"><a href="all-products.html">ALL PRODUCT </a></li>
+            <li class="dm"><a href="all-orders.html">ALL ORDERS </a></div>
+             </li>
+            </ul>
+
+        </div>
+
+        <div class="logout">
+            <a href="#" class="LinkOut">
+                <h1>Log Out</h1>
+            <i class='bx bx-log-out-circle logOut-icon'></i>
+            </a>
+        </div>
+        </div>
+    <div class="body-right">
+        <div class="right-head">
+            <div class="rh-b">
+                <h1>Create Products</h1>
+        <form method="post" action="http://159.65.21.42:9000/create/product" enctype="multipart/form-data">
+            <div class="container-forms">
+                    <div class="cont-form1">
+                        <div>
+                            <label for="name">Product Name</label><br>
+                            <input type="text" placeholder="Name" name="name" id="name">
+                        </div>
+                        <div>
+                            <label for="descrpition">Product Description</label><br>
+                            <input type="text" placeholder="Description" name="description" id="description">
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="cont-form1">
+                        <div><label for="price">Price of the Product</label><br>
+                        <input type="number" placeholder="Price" name="price" id="price"></div>
+                        <div><label for="quantity">Quantiy of the Product</label><br>
+                        <input type="number" placeholder="quantity" name="quantity" id="quantity"></div>
+                    </div>
+
+                    <div class="cont-form1 selectCat">
+<div>
+
+                    <label for="image">Upolad image</label>
+                    <input type="file" class="file-input" name="image" id="image">
+</div>
+
+                    
+                        <div>
+                            <label for="category">Product category</label><br><br>
+                        <select name="category" id="category">
+                            <option value="">Seclect category</option>
+                            <option value="men's slippers">mahabis men's product</option>
+                            <option value="ele-shoe">mahabis shoe section</option>
+                            <option value="men's-slipper">mahabis men's product 2</option>
+                        </select></div>
+                    </div>
+                    <br><br>
+                    
+                </div>
+
+                <button class="submit-file">Submit</button>
+            </div>
+        </form>
+                
+        </div>
+    </div>
+    
+
+</div>
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
